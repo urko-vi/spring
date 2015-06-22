@@ -13,10 +13,16 @@ public class RunSoapClient {
         URLClassLoader classLoader = (URLClassLoader)RunSoapClient.class.getClassLoader();
         System.out.println(Arrays.toString(classLoader.getURLs()));
         
-		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext();
-        ctx.register(ClientAppConfig.class);
-        ctx.refresh();
-		StudentClient studentClient = ctx.getBean(StudentClient.class);
+		AnnotationConfigApplicationContext ctx =null;
+		StudentClient studentClient = null;
+		try{
+			ctx = new AnnotationConfigApplicationContext();
+	        ctx.register(ClientAppConfig.class);
+	        ctx.refresh();
+			studentClient = ctx.getBean(StudentClient.class);
+		} finally{
+			ctx.close();
+		}
 		System.out.println("For Student Id: 1");
 		GetStudentResponse response = studentClient.getStudentById(1);
 		System.out.println("Name:"+response.getStudent().getName());
