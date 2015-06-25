@@ -15,5 +15,6 @@ public class SaltedPasswordEncrypter {
 		Md5PasswordEncoder encoder = new Md5PasswordEncoder();
 		String encryptedPassword = encoder.encodePassword(password, salt);
 		System.out.println(encryptedPassword);
+		scanner.close();
 	}
 }
