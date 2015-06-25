@@ -77,7 +77,7 @@
 				</executions>
 				<configuration>
 					<schemaLanguage>WSDL</schemaLanguage>
-					<generatePackage>com.greglturnquist.wsdl</generatePackage>
+					<generatePackage>com.campus2b.formacion.wsdl</generatePackage>
 					<forceRegenerate>true</forceRegenerate>
 					<schemas>
 						<schema>

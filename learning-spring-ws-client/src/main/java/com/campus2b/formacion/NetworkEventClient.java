@@ -1,4 +1,4 @@
-package com.greglturnquist.learningspringws;
+package com.campus2b.formacion;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -10,8 +10,8 @@ import javax.xml.transform.dom.DOMResult;
 import javax.xml.transform.dom.DOMSource;
 import java.math.BigInteger;
 
-import com.greglturnquist.wsdl.SendNetworkEventRequest;
-import com.greglturnquist.wsdl.SendNetworkEventResponse;
+import com.campus2b.formacion.wsdl.SendNetworkEventRequest;
+import com.campus2b.formacion.wsdl.SendNetworkEventResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;

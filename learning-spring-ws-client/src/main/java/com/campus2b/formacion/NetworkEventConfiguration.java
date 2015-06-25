@@ -1,4 +1,4 @@
-package com.greglturnquist.learningspringws;
+package com.campus2b.formacion;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

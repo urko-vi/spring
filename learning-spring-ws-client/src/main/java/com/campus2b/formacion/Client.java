@@ -1,6 +1,6 @@
-package com.greglturnquist.learningspringws;
+package com.campus2b.formacion;
 
-import com.greglturnquist.wsdl.SendNetworkEventResponse;
+import com.campus2b.formacion.wsdl.SendNetworkEventResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
